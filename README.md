@@ -41,8 +41,4 @@ Each signal is split into K = 6 modes using three methods:
 |---|---|---|
 | EMD | Empirical Mode Decomposition | Data-driven. IMFs run from fast to slow. First 6 IMFs kept (padded with zeros if fewer). |
 | VMD | Variational Mode Decomposition | alpha = 2000, tau = 0, tol = 1e-6. Modes sorted from slow to fast by center frequency. |
-| MVMD | Multivariate VMD | Decomposes several channels together with shared center frequencies. |
-
-**MVMD channel construction.** Bonn recordings are single-channel, so MVMD input is built by bundling recording *i* from each set into one 5-channel group `[A_i, B_i, C_i, D_i, E_i]`, giving 100 bundles. Each bundle holds one recording per class, so the decomposition never sees the labels. Channels are scaled to unit variance before decomposition so the large seizure amplitudes do not dominate, and scaled back afterwards.
-
 Output of each method has shape (500 recordings, 6 modes, 4096 samples).
