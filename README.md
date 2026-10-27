@@ -1,6 +1,6 @@
 ﻿# Epileptic Seizure Detection
 
-Detecting epileptic seizures from EEG signals. Each signal is decomposed into modes with EMD, VMD and MVMD, features are extracted from the modes, and a classifier separates seizure, non-seizure epilepsy and normal recordings. The goal is to find which decomposition method works best.
+Detecting epileptic seizures from EEG signals. Each signal is decomposed into modes with EMD, VMD and MVMD, features are extracted from the modes, and a classifier separates seizure, non-seizure epilepsy and normal recordings. 
 
 ## Dataset
 
