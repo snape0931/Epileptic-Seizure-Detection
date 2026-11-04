@@ -41,8 +41,7 @@ Each signal is split into K = 6 modes. Modes are ordered from fast to slow (Mode
 |---|---|---|---|
 | EMD | Empirical Mode Decomposition | Done | Data-driven. IMFs run from fast to slow. First 6 IMFs kept (padded with zeros if fewer; the residue is dropped). |
 | VMD | Variational Mode Decomposition | Done | Univariate, alpha = 2000, tau = 0, DC = 0, tol = 1e-6. Modes are sorted by center frequency, then reversed so Mode 1 is the fastest (checked by zero-crossing counts). |
-| CEEMDAN | Complete Ensemble EMD with Adaptive Noise | Planned | Improved EMD variant. |
-| MVMD | Multivariate VMD | Planned | Not yet implemented. |
+ 
 
 Output of each method has shape (500 recordings, 6 modes, 4096 samples) and is cached as `modes_emd.npy` and `modes_vmd.npy`. Delete the files to recompute (VMD takes about 8 minutes, EMD about 1 minute).
 
