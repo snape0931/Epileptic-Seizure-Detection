@@ -88,8 +88,3 @@ These numbers use the same cross-validation folds for model selection and report
 
 Open `sop.ipynb` in Google Colab and use Run All. The notebook installs its dependencies (`EMD-signal`, `vmdpy`, `scikit-learn`, `scipy`, `joblib` and others), clones this repository for the data, and runs the whole pipeline in about 12-15 minutes on the first run. Later runs are faster because the decompositions are cached.
 
-## Next steps
-
-- Add CEEMDAN and MVMD decompositions and compare them with EMD and VMD.
-- Extend the feature library and check feature importance per mode.
-- Validate with label-shuffle, repeated-CV and held-out tests.
